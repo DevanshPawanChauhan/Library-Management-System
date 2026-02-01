@@ -1,3 +1,6 @@
+import json
+BOOKS_FILE = "books.json"
+MEMBERS_FILE = "members.json"
 class Book:
     def __init__(self, book_id, title, author, available_copies, total_copies):
         self.book_id = book_id
@@ -45,3 +48,34 @@ class Member:
             data["name"],
             data["borrowed_books"]
         )
+
+class Library:
+    def __init__(self):
+        self.books = {}      
+        self.members = {}    
+
+        self.load_books()
+        self.load_members()
+        def load_books(self):
+        pass
+
+    def save_books(self):
+        pass
+
+    def load_members(self):
+        pass
+
+    def save_members(self):
+        pass
+
+    def add_book(self, book):
+        pass
+
+    def add_member(self, member):
+        pass
+
+    def borrow_book(self, member_id, book_id):
+        pass
+
+    def return_book(self, member_id, book_id):
+        pass
